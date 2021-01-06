@@ -173,6 +173,7 @@ nav a {
   padding: 2px 3px 2px 3px;
   margin: 0 5px;
   font-size: 2rem;
+  color: #00acaa;
 }
 
 nav li a {
@@ -281,6 +282,17 @@ nav li a:hover, nav li a.active {
 
  /************MAIN**************/
 
+.card-border{
+  box-shadow: 3px 3px 5px 5px rgba(0, 172, 170,0.5);
+  border-radius: 5px;
+  width: 50%;
+  background: #00acaa;
+  margin: auto;
+  padding: 50px 0 70px 0;
+  margin-top: 70px;
+}
+
+
 .widescreen-post-hero{
  min-height: calc(100vh - 440px);
  display: flex;
@@ -367,12 +379,21 @@ nav li a:hover, nav li a.active {
   transition: 2.5s;
 }
 
+.animation-element.no-fade.in-view{
+  opacity: 1;
+}
+
 .hero{
   height: calc(100vh);
   transition: .5s;
   padding-top: 120px;
   margin-top: 0;
   
+}
+
+.invisible{
+  display: none;
+  opacity: 0;
 }
 
 .hero-reducted{
@@ -571,6 +592,14 @@ footer .container{
   margin-top: 50px;
 }
 
+#collaborazioni, #contacts{
+  padding-top: 90px;
+}
+
+#collaborazioni .item{
+  padding: 25px 0;
+}
+
 #collaborazioni .row{
   margin-bottom: 30px;
 }
@@ -597,8 +626,10 @@ footer .container{
 }
 
 #logo_2{
-  height: 300px;
+  max-height: 300px;
 }
+
+
 
 
 @media only screen and (min-width: 1200px) {
