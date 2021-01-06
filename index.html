@@ -15,9 +15,9 @@
   <meta name="theme-color" content="#ffffff">
 		<!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
   <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css">
   <link rel="stylesheet" type="text/css" href="stylesheets/grid-sistem.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
     <!--Import Font-->
   <link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   <script type="text/javascript" src="js/jquery.js"></script>
@@ -72,28 +72,49 @@
 
 <main id="home">
 	<div class="container-fluid">
-    <section class="hero container-fluid row widescreen" id="hero-home">
-      <div class="B center-text primary-text col-lg-8 side-padded-10" id="impact">
-        <h1>FISIOTERAPIA:<br>LA STRADA PER GESTIRE IL LABIRINTO DEL DOLORE FISICO</h1>
-      </div>
-      <div class="img-container col-lg-4 side-padded-10 center-text">
-        <img src="images/Labirinto.png" alt="">
-      </div>
-      <div class="btn upper mobile-only"><a class="primary-text B" href="#contacts">Prenota subito!</a></div>
-    </section>
-    <section class="" id="about">
-      <div class="container-fluid center-text s2 banner widescreen col-flex" id="conosciamoci">
-        <div class="fisio-img">
-          <img src="images/Valentina.jpg">
+    <section class="hero container-fluid widescreen col-flex" id="hero-home">
+      <div class="row container-fluid">
+        <div class="col-md-6 s2 primary-text B center-text">
+          <h1>
+            Valentina Ferrari<br>
+            Dottoressa in Fisioterapista
+          </h1>
+          <p>Master Universitario in Fisioterapia Sportiva<br>
+            Formazione in Riabilitazione post-oncologica e del Sistema Linfatico<br>
+          </p>
         </div>
-        <div class="container-sm animation-element fade-in">
-          <h2>Il rapporto di fiducia, anche in riabilitazione, è fondamentale quindi conosciamoci!</h2>
-          <p>Sono Valentina Ferrari e il mio lavoro, la mia passione è la fisioterapia. Per questo i progetti che seguo hanno a che fare con fantastiche persone, dolore e riconquista.</p>
+        <div class="img-container col-md-6 side-padded-10 center-text">
+          <img src="images/Labirinto.png" alt="">
+        </div>
+      </div>
+      <div class="B center-text primary-text s2 side-padded-10 container-sm" id="impact">
+        <h2>FISIOTERAPIA:<br>LA STRADA PER GESTIRE IL LABIRINTO DEL DOLORE FISICO</h2>
+      </div>
+    </section>
+    <section class="col-flex" id="about">
+      <div class="container-fluid row s2" id="conosciamoci">
+        <div class="col-lg-4 center-text">
+          <div class="fisio-img">
+            <img src="images/Valentina.jpg">
+          </div>
+        </div>
+        <div class="animation-element fade-in container col-lg-8">
+          <h2 class="center-text">Il rapporto di fiducia, anche in riabilitazione, è fondamentale quindi conosciamoci!</h2>
+          <p class="justified side-padded-10">
+            Sono Valentina Ferrari e il mio lavoro, la mia passione, è la fisioterapia.<br>
+            Per questo i progetti che seguo hanno a che fare con fantastiche persone, dolore e riconquista.<br>
+            Gli ambiti in cui ho focalizzato il mio interesse clinico e formativo sono:
+          </p>
+          <ul class="justified side-padded-10">
+            <li>Fisioterapia Sportiva e Miofasciale</li>
+            <li>Riabilitazione post-oncologica e del sistema linfatico</li>
+          </ul>
         </div>
       </div>
     </section>
     <section id="icone">
       <div class="container card-container top-aligned col-flex">
+        <h2 class="s3 B">APPROCCIO TERAPEUTICO</h2>
         <div class="col-md-6 row">
           <div class="col-md img-container">
             <img src="images/testa.png">
@@ -143,17 +164,17 @@
         
       </div>
     </section>
-    <section id="collaborazioni">
+    <section id="collaborazioni" class="widescreen">
       <div class="banner item">
-        <h2 class="s3 center-text upper B">collaborazioni lavorative</h2>
-        <div class="container-sm s2 justified">
+        <h2 class="s3 center-text upper B">dove trovarmi</h2>
+        <div class="container-sm s2 justified invisible">
           <p>Gli ambiti in cui ho focalizzato il mio interesse clinico e formativo sono la Fisioterapia Sportiva e la Riabilitazione post-oncologica e del sistema linfatico.</p>
           <br>
           <p>Per questo, ho attivato diverse collaborazioni e progetti, ecco quelli attualmente attivi:</p>
         </div>
       </div>      
       <div class="container-sm card-container" id="">
-        <div class="row s2 item">
+        <div class="row s2 item ">
           <div class="col-md-6 card">
             <div class="item img-container center-text">
               <img src="images/Life-logo.png">
@@ -195,8 +216,8 @@
             </div>
           </div>
         </div>
-        <h2 class="s3 center-text upper B">collaborazioni di volontariato</h2>
-        <div class="row s2 item">
+        <h2 class="s3 center-text upper B invisible">collaborazioni di volontariato</h2>
+        <div class="row s2 item invisible">
           <div class="col-md-3 card">
             <div class="item img-container">
               <img src="images/angela-serra.png">
@@ -254,7 +275,7 @@
     </section>
     <section id="contacts">
       <div class="container-sm widescreen white-text">
-        <div class="col-flex card-border">
+        <div class="col-flex card-border animation-element fade-from-bottom">
           <h2 class="s3">CONTATTI</h2>
           <div class="col-flex s2">
             <h3>E-Mail</h3>
@@ -263,6 +284,12 @@
           <div class="col-flex s2">
             <h3>Whatsapp</h3>
             <a href="tel:3343434253" class="row s2 white-text"><i class="material-icons">smartphone</i><p>+39 3343434253</p></a>
+          </div>
+          <div class="col-flex s2">
+            <h3>Linkedin</h3>
+            <div id="linkedin">
+              <a href="https://www.linkedin.com/in/valeferrari/" target="blank"><img src="images/linkedin.png"></a>
+            </div>
           </div>
         </div>
       </div>

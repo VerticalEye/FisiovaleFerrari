@@ -31,12 +31,14 @@ function check_if_in_view() {
       $header.css('height' , '90px');
       $('#head-logo').css('width' , '200px');
       $hero.css('margin-top' , '90px');
+      $header.css('box-shadow' , '0 3px 2px rgba(0, 172, 170, .8)');
     } else {
       $hero.addClass('widescreen');
       $hero.removeClass('hero-reducted');
       $hero.css('margin-top' , '0');
       $header.css('background' , 'transparent');
       $header.css('height' , '120px');
+      $header.css('box-shadow' , 'none');
       $('#head-logo').css('width' , '210px');
       $('#about-link').removeClass('active');
     }
@@ -57,7 +59,7 @@ var about_bottom_position = ($('#about2').offset().top + $('#about2').outerHeigh
 var coll_bottom_position = ($('#collaborazioni').offset().top + $('#collaborazioni').outerHeight());
 var active_position = window_top_position + $('header').outerHeight();
 
-  if (($('#about').offset().top < window_bottom_position) && (about_bottom_position > active_position )) {
+  if (($('#about').offset().top < window_bottom_position) && (about_bottom_position > active_position ) && (!$hero.hasClass('widescreen'))) {
     $('.about-link').addClass('active');
     $('.cont-link').removeClass('active');
     $('.coll-link').removeClass('active');
