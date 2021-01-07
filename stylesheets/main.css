@@ -714,6 +714,9 @@ footer .container{
   font-size: 1.3rem;
   }
 
+  .card-border{
+    width: 95%;
+  }
   
 
 }
