@@ -241,6 +241,12 @@
   flex: 0 1 100%;
 }
 
+/********COLUMNS_XXL************/
+.col-xxl {
+  flex: 0 1 100%;
+  padding: 10px 0;
+}
+
 
 /*********** MEDIAQUERIES ***********/
 
