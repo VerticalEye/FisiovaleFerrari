@@ -22,13 +22,14 @@ html {
 a {
   text-decoration: none;
   font-size: 1rem;
-  color: #000;
+  color: #444;
 }
 
 main {
   min-height: calc(100vh - 90px - 90px);
   transition: margin-left .5s;
   padding-bottom: 30px;
+  color: #444;
 }
 
 img {
@@ -116,7 +117,7 @@ ul{
 }
 
 .fourth-text{
-  color: #a8d5e2;
+  color: #444;
 }
 
 .text-shadow{
@@ -516,6 +517,7 @@ nav li a:hover, nav li a.active {
 .card-container .img-container{
   margin: auto;
   text-align: center;
+  padding: 0 5px;
 }
 
 .caption{
@@ -603,9 +605,14 @@ footer .container{
   margin-top: 70px;
 }
 
-#collaborazioni, #contacts, #about, #icone{
+#contacts, #about, #icone{
   padding-top: 100px;
 }
+
+#collaborazioni{
+  padding-top: 35px;
+}
+
 #collaborazioni .col-md-6{
   height: 340px;
 }
